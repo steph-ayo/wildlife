@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+}
+
+
+h1{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: cursive;
+    border-bottom: pink solid 2px;
+    border-right: pink solid 2px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 4px 5px darkgray;
+
+}
+
+/* styling of container */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* styling of images */
+img{
+    width:  400px;
+    height: 300px;
+    margin: 7px;
+    transition: all 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* media query for 350px */
+@media screen and (max-width: 350px) {
+    .container{
+        flex-direction: column;
+    }
+}
